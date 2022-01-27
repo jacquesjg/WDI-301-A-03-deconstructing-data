@@ -54,14 +54,14 @@ var user = {
   },
 };
 
-const { favoriteThings: { food: food } } = user;
+var { favoriteThings: { food: food } } = user;
 
 console.log('Question 4: food =', food);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 5. Once you have grabbed the favorite foods. Descontrusct the food array to grab only the first 2 values. //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-const [first, second] = food;
+var [first, second] = food;
 
 console.log('Question 5:', "first food:", first, "and second food is:", second,
 );
@@ -73,7 +73,7 @@ console.log('Question 5:', "first food:", first, "and second food is:", second,
 //    the food variable should have all the array items starting from the third one.
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const data = ['peter', '34', 'apple', 'oranges', 'pizza', 'tacos'];
-const { 'peter': name } = data;
-console.log(name)
+var [name, age, ...food] = data;
+console.log("Question 6:", "name:", name, "age:", age, "food:", food);
 
 
